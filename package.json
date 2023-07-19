@@ -1,0 +1,19 @@
+{
+  "name": "boostrap",
+  "version": "1.0.0",
+  "description": "proyecto1",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elprofedotti/DisenioWebAustral.git"
+  },
+  "author": "elprofedotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elprofedotti/DisenioWebAustral/issues"
+  },
+  "homepage": "https://github.com/elprofedotti/DisenioWebAustral#readme"
+}

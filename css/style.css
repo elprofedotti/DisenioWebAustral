@@ -1,0 +1,19 @@
+.header{
+    background-color: darkgray;
+    padding: 25px;
+}
+.btn{
+    background-color: blue;
+    color: aliceblue;
+}
+.card-prod{
+    flex: 1 150px;
+    padding: 2px;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 15px;
+    margin-top: 50px;
+}

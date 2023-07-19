@@ -5,11 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="header">
+        <h1 >PRODUCTOS</h1>
+    </div>
     
-    <h1>Proyecto para Curso Universidad Austral/Coursera</h1>
-    <p>parrafo</p>
+    
+    <div class="container">
+    
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Titulo1</h3>
+                <p class="col-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi magni modi facilis maxime fuga est incidunt quisquam numquam placeat tempora molestias, ullam aspernatur, libero quos repudiandae nihil, vitae vero.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Titulo2</h3>
+                <p class="col-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi magni modi facilis maxime fuga est incidunt quisquam numquam placeat tempora molestias, ullam aspernatur, libero quos repudiandae nihil, vitae vero.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Titulo3</h3>
+                <p class="col-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi magni modi facilis maxime fuga est incidunt quisquam numquam placeat tempora molestias, ullam aspernatur, libero quos repudiandae nihil, vitae vero.</p>
+            </div>
+        </div>
+        <br>
+        
+        
+        <div class="d-flex flex-wrap ">
+            <div class="card-prod d-flex flex-column justify-content">
+                <div>
+                    <h4>Desktop</h4>
+                    <p>i5 256ssd 32ram</p>
+                    <p>Promocion</p>
+                </div>
+                <div>
+                    <button class="btn">Ver</button>
+                </div>
+            </div>
+            <div class="card-prod d-flex flex-column justify-content">
+                <div>
+                    <h4>Notebok</h4>
+                    <p>i5 256ssd 32ram</p>
+                </div>
+                <div>
+                    <button class="btn">Ver</button>
+                </div>
+            </div>
+            <div class="card-prod d-flex flex-column justify-content">
+                <div>
+                    <h4>Tablet</h4>
+                    <p>i5 64ssd 8ram</p>
+                </div>
+                <div>
+                    <button class="btn">Ver</button>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="">Facebook</a>
+                <a href="">Instragram</a>
+                <a href="">Youtube</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <h3>Espacio Alquimia</h3>
+                    <p>Colon 66</p>
+                    <p>Zapala - NQN</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="">Home</a>
+                <a href="">elprofe</a>
+                <a href="">Productos</a>
+            </div>
+        </div>
+    </footer>
     
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
     <script src="node_modules/popper.js/dist/popper.min.js" ></script>

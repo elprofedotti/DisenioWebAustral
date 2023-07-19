@@ -4,6 +4,7 @@
   "description": "proyecto1",
   "main": "index.html",
   "scripts": {
+    "dev":"lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/elprofedotti/DisenioWebAustral/issues"
   },
-  "homepage": "https://github.com/elprofedotti/DisenioWebAustral#readme"
+  "homepage": "https://github.com/elprofedotti/DisenioWebAustral#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }

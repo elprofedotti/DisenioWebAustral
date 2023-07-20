@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>elprofedotti - BOOTSTRAP</title>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -54,7 +55,7 @@
       </nav>
     
     <div class="jumbotron">
-        <h1 >CONTACTO</h1>
+        <h1 >PRECIOS</h1>
     </div>
     
     
@@ -62,56 +63,52 @@
         <br>
         <nav class="breadcrumb">
           <a class="breadcrumb-item" href="/">Home</a>
-          <span class="breadcrumb-item active" aria-current="page">Contacto</span>
+          <span class="breadcrumb-item active" aria-current="page">Inicio</span>
         </nav>
-        
-        <form action="" class="form-control">
-          <br>
-          <div class="row g-3">
-              <div class="col-sm-6">
-                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
-                <small id="nombreHelpId" class="form-text text-muted" >nombre y apellido</small>
-              </div>
-              <div class="col-sm-6">
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelpId" placeholder="abc@mail.com">
-                <small id="emailHelpId" class="form-text text-muted">email</small>
-              </div>
-          </div>
-          <br>
-          <div class="row g-3">
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="domicilio" placeholder="Tu domicilio">
-              <small id="domicilioHelpId" class="form-text text-muted">domicilio</small>
-            </div>
-            <div class="form-group col-sm-3">
-              <select name="" id="sector" class="form-control">
-                <option>Soporte</option>
-                <option selected>Ventas</option>
-                <option>Administracion</option>
-                <option>Clientes</option>
-                <option>Gerencia</option>
-              </select>
-              <small id="sectorHelpId" class="form-text text-muted">Seleccione sector</small>
-            </div>
+        <div class="table-responsive">
+          <table class="table table-secondary">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Calidad</th>
+                <th scope="col">Precio $</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td scope="row">Notebook</td>
+                <td>i5 32DDR5 512SSD</td>
+                <td><span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span></td>
+                <td>$ 899.000</td>
+              </tr>
+              <tr class="">
+                <td scope="row">Tablet</td>
+                <td>i5 8DDR5 128SSD</td>
+                <td><span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span></td>
+                <td>$ 899.000</td>
+              </tr>
+              <tr class="">
+                <td scope="row">Desktop</td>
+                <td>i7 16DDR5 512SSD Pantalla LED 24''</td>
+                <td><span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span>
+                <span class="oi oi-star"></span></td>
+                <td>$ 688.000</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <br>
-          <div class="form-group">
-            <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje"></textarea>
-            <small id="mensajeHelpId" class="form-text text-muted">mensaje</small>
-          </div>
-          <br>
-          
-            <button type="submit" class="btn">Enviar</button>
-          
-          <br>
-          <div class="form-group">
-            <div>
-              <input type="checkbox" class="form-check-input" id="contactar">
-              <label class="form-check-label" for="contactar">Quiero que me contacten</label>
-            </div>  
-          </div>
-        </form>
-          
+        
+            
+        
     </div>
     <footer class="footer">
         <div class="row">
@@ -123,8 +120,8 @@
             <div class="col-sm-4">
                 <address>
                     <h3>Espacio Alquimia</h3>
-                    <p>Colon 66</p>
-                    <p>Zapala - NQN</p>
+                    <p>Colon 66 - Zapala - NQN</p>
+                    <p><span class="oi oi-phone"></span>+5492942625906</p>
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">

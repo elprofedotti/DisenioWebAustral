@@ -1,6 +1,7 @@
 .jumbotron{
     background-color: darkgray;
     padding: 25px;
+    margin-top: 50px;
 }
 .btn{
     background-color: blue;
@@ -16,4 +17,8 @@
     color: aliceblue;
     padding: 15px;
     margin-top: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: darkgray;
 }

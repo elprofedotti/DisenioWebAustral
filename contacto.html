@@ -6,7 +6,6 @@
     <title>Bootstrap demo</title>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -52,7 +51,7 @@
       </nav>
     
     <div class="jumbotron">
-        <h1 >PRODUCTOS</h1>
+        <h1 >CONTACTO</h1>
     </div>
     
     
@@ -60,57 +59,56 @@
         <br>
         <nav class="breadcrumb">
           <a class="breadcrumb-item" href="/">Home</a>
-          <span class="breadcrumb-item active" aria-current="page">Inicio</span>
+          <span class="breadcrumb-item active" aria-current="page">Contacto</span>
         </nav>
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Revoluciona Tu Trabajo Con Las Últimas Tablets</h3>
-                <p class="col-sm">Desata tu creatividad en movimiento con nuestras últimas tablets, con pantallas de alta resolución y soporte para stylus sensibles.</p>
+        
+        <form action="" class="form-control">
+          <br>
+          <div class="row g-3">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                <small id="nombreHelpId" class="form-text text-muted" >nombre y apellido</small>
+              </div>
+              <div class="col-sm-6">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelpId" placeholder="abc@mail.com">
+                <small id="emailHelpId" class="form-text text-muted">email</small>
+              </div>
+          </div>
+          <br>
+          <div class="row g-3">
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="domicilio" placeholder="Tu domicilio">
+              <small id="domicilioHelpId" class="form-text text-muted">domicilio</small>
             </div>
-            <div class="col-sm-4">
-                <h3>Soluciones de Escritorio para un Eficaz Montaje de Oficina en Casa</h3>
-                <p class="col-sm">Eleva tu juego con nuestras computadoras de escritorio de alta especificación, con las últimas GPUs para gráficos de alta calidad y un juego fluido.</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Haz Más en Movimiento con Notebooks de Alto Rendimiento</h3>
-                <p class="col-sm">Perfectas para estudiantes, nuestras notebooks versátiles y asequibles están diseñadas para apoyar todas tus necesidades educativas, desde la investigación hasta los proyectos multimedia.</p>
+            <div class="form-group col-sm-3">
+              <select name="" id="sector" class="form-control">
+                <option>Soporte</option>
+                <option selected>Ventas</option>
+                <option>Administracion</option>
+                <option>Clientes</option>
+                <option>Gerencia</option>
+              </select>
+              <small id="sectorHelpId" class="form-text text-muted">Seleccione sector</small>
             </div>
         </div>
         <br>
-        
-        
-        <div class="d-flex flex-wrap ">
-            <div class="card-prod d-flex flex-column justify-content">
-                <div>
-                    <h4>Desktop</h4>
-                    <p>i5 256ssd 32ram</p>
-                    
-                </div>
-                <div>
-                    <button class="btn">Ver</button>
-                </div>
-            </div>
-            <div class="card-prod d-flex flex-column justify-content">
-                <div>
-                    <h4>Notebok</h4>
-                    <p>i5 256ssd 32ram</p>
-                </div>
-                <div>
-                    <button class="btn">Ver</button>
-                </div>
-            </div>
-            <div class="card-prod d-flex flex-column justify-content">
-                <div>
-                    <h4>Tablet</h4>
-                    <p>i5 64ssd 8ram</p>
-                </div>
-                <div>
-                    <button class="btn">Ver</button>
-                </div>
-            </div>
-        </div>
-            
-        </div>
+          <div class="form-group">
+            <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje"></textarea>
+            <small id="mensajeHelpId" class="form-text text-muted">mensaje</small>
+          </div>
+          <br>
+          
+            <button type="submit" class="btn">Enviar</button>
+          
+          <br>
+          <div class="form-group">
+            <div>
+              <input type="checkbox" class="form-check-input" id="contactar">
+              <label class="form-check-label" for="contactar">Quiero que me contacten</label>
+            </div>  
+          </div>
+        </form>
+          
     </div>
     <footer class="footer">
         <div class="row">
@@ -122,8 +120,8 @@
             <div class="col-sm-4">
                 <address>
                     <h3>Espacio Alquimia</h3>
-                    <p>Colon 66 - Zapala - NQN</p>
-                    <p><span class="oi oi-phone"></span>+5492942625906</p>
+                    <p>Colon 66</p>
+                    <p>Zapala - NQN</p>
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">

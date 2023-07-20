@@ -47,7 +47,7 @@
               </ul>
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Busca tu producto" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <button class="btn btn-outline-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Buscar por categorias, nombres o precios">Buscar</button>
               </form>
             </div>
           </div>
@@ -78,10 +78,13 @@
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="comentarios-tab" data-bs-toggle="tab" data-bs-target="#comentarios" type="button" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</button>
         </li>
-        <li class="nav-item" role="presentation">
+        <li  class="nav-item" role="presentation">
+          
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Asociado</a>
         </li>
+        
       </ul>
+      
       <!-- fin pestañas -->
       <!-- tablas -->
       <div class="tab-content" id="myTabContent">
@@ -97,21 +100,21 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active data-bs-interval="2000"">
                   <img src="media/3.jpg" class="d-block img-fluid" width="100%"  alt="...">
                   <div class="carousel-caption  d-md-block" style="background-color: rgba(0, 0, 0, 0.650);">
                     <h2>Juan Acosta</h2>
                     <h6>Tremendos equipos!! soy VIP, asiq me lleve gran descuento!!</h6>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item data-bs-interval="3000"">
                   <img src="media/4.jpg" class="d-block img-fluid" width="100%" alt="...">
                   <div class="carousel-caption  d-md-block" style="background-color: rgba(0, 0, 0, 0.650);">
                     <h2>Natalia Afione</h2>
                     <h6>Increible tablet, a todos lados conmigo!! encima pegue descuento por ser premium!!</h6>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item data-bs-interval="4000"">
                   <img src="media/5.jpg" class="d-block img-fluid" width="100%" alt="...">
                   <div class="carousel-caption  d-md-block" style="background-color: rgba(0, 0, 0, 0.650);">
                     <h2>Mauro Seoane</h2>
@@ -177,6 +180,38 @@
               </div>
             </div>
             <!-- fin acordeon -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn-2 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Suscribirme
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Suscriptores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Enero 2024 se abren las suscripciones!</p>
+                    <p>Disculpe las molestias!!!</p>
+                    <form class="d-flex">
+                      <div>
+                        <input class="form-control me-2" type="email" placeholder="tu mejor email" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Te avisaremos cuando activemos las suscripciones!!!">
+                      </div>
+                      
+                    </form>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button class="btn btn-outline-success" type="submit" >Enviar, y avisarme</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- <div class="card" style="width: 18rem;">
               <div class="card-body text-bg-dark">
                 <h5 class="card-title ">Suscripciones</h5>
@@ -205,7 +240,7 @@
                   <th scope="col">Nombre</th>
                   <th scope="col">Descripcion</th>
                   <th scope="col">
-                    <button class="btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Calidad</button>
+                    <button class="btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3" title="Mostrar Calidad">Calidad</button>
                   </th>
                   <th scope="col">Precio $</th>
                 </tr>
@@ -228,7 +263,7 @@
                   <td scope="row">Tablet</td>
                   <td>i5 8DDR5 128SSD</td>
                   <td>
-                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
                       <span class="oi oi-star"></span>
                       <span class="oi oi-star"></span>
                       <span class="oi oi-star"></span></td>
@@ -240,7 +275,7 @@
                   <td scope="row">Desktop</td>
                   <td>i7 16DDR5 512SSD Pantalla LED 24''</td>
                   <td>
-                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
                       <span class="oi oi-star"></span>
                       <span class="oi oi-star"></span>
                       <span class="oi oi-star"></span>
@@ -282,6 +317,7 @@
     </footer>
     
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+    
     <script src="node_modules/popper.js/dist/popper.min.js" ></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
   </body>

@@ -7,6 +7,11 @@
     background-color: blue;
     color: aliceblue;
 }
+.btn-2{
+    background-color: rgb(129, 184, 239);
+    color: rgb(0, 0, 0);
+    border: 0;
+}
 .card-prod{
     flex: 1 150px;
     padding: 2px;

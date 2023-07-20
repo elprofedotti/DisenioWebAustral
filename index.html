@@ -47,7 +47,7 @@
               </ul>
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Busca tu producto" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <button class="btn btn-outline-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Buscar por categorias, nombres o precios">Buscar</button>
               </form>
             </div>
           </div>
@@ -124,8 +124,11 @@
           </div>
         </div>
           
-        
-            
+        <br>
+        <div>
+          <br>
+          <button type="button" class="btn-lg" data-bs-toggle="popover" title="Proximamente!!!" data-bs-content="Estamos trabajando para salir adelante con la modalidad Asociados!!!">Asociados</button>
+        </div>    
         
     </div>
     <footer class="footer">
@@ -151,7 +154,13 @@
     </footer>
     
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+    <script src="js/main.js" ></script>
     <script src="node_modules/popper.js/dist/popper.min.js" ></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <script>
+      $(function(){
+        $("[data-bs-toggle='popover']").popover();
+      });
+    </script>
   </body>
 </html>

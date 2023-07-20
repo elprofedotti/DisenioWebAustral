@@ -134,8 +134,50 @@
         <!-- tabla suscripciones -->
         <div class="tab-pane fade" id="suscripciones" role="tabpanel" aria-labelledby="suscripciones-tab">
           <div class="d-flex justify-content-center">
-          
-            <div class="card" style="width: 18rem;">
+            <!-- acordeon -->
+            
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    VIP
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Obtienes 25% de descuento en tu primer compra! </strong> 
+                    <p>En las posteriores, siempre tendrás un 10% de descuento</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Premium
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Obtienes 10% de descuento en tu primer compra! </strong> 
+                    <p>En las posteriores, siempre tendrás un 5% de descuento</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Free
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Obtienes 5% de descuento en tu primer compra! </strong> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fin acordeon -->
+            <!-- <div class="card" style="width: 18rem;">
               <div class="card-body text-bg-dark">
                 <h5 class="card-title ">Suscripciones</h5>
                 <p class="card-text">Estos son los descuentos según tu suscripción</p>
@@ -148,7 +190,7 @@
               <div class="card-body">
                 <p class="card-text">Cada suscripción otorga diferentes descuentos!!</p>
               </div>
-            </div>
+            </div> -->
           </div>
         
         </div>
@@ -162,7 +204,9 @@
                 <tr>
                   <th scope="col">Nombre</th>
                   <th scope="col">Descripcion</th>
-                  <th scope="col">Calidad</th>
+                  <th scope="col">
+                    <button class="btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Calidad</button>
+                  </th>
                   <th scope="col">Precio $</th>
                 </tr>
               </thead>
@@ -170,28 +214,39 @@
                 <tr class="">
                   <td scope="row">Notebook</td>
                   <td>i5 32DDR5 512SSD</td>
-                  <td><span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span></td>
+                  <td>
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span></td>
+                    </div>
                   <td>$ 899.000</td>
                 </tr>
                 <tr class="">
                   <td scope="row">Tablet</td>
                   <td>i5 8DDR5 128SSD</td>
-                  <td><span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span></td>
+                  <td>
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span></td>
+                    </div>
+                  </td>
                   <td>$ 599.000</td>
                 </tr>
                 <tr class="">
                   <td scope="row">Desktop</td>
                   <td>i7 16DDR5 512SSD Pantalla LED 24''</td>
-                  <td><span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span></td>
+                  <td>
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span></td>
+                    </div>
+                  </td>
                   <td>$ 699.000</td>
                 </tr>
               </tbody>

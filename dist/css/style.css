@@ -1,0 +1,30 @@
+.jumbotron{
+    background-color: darkgray;
+    padding: 25px;
+    margin-top: 55px;
+}
+.btn{
+    background-color: blue;
+    color: aliceblue;
+}
+.btn-2{
+    background-color: rgb(129, 184, 239);
+    color: rgb(0, 0, 0);
+    border: 0;
+}
+.card-prod{
+    flex: 1 150px;
+    padding: 2px;
+    margin: 6px;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 15px;
+    margin-top: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: darkgray;
+}

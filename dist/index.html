@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>elprofedotti - BOOTSTRAP</title>
+    
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Tecnologia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">elprofedotti</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body navbar-dark bg-dark">
+              <ul class="navbar-nav  justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="precios.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                  </div>
+                </li> -->
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Busca tu producto" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Buscar por categorias, nombres o precios">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div>
+      <div class="jumbotron">
+        <h1 >PRODUCTOS</h1>
+      </div>
+      <!-- <video src="media/1.mp4" autoplay loop class="img-fluid"></video> -->
+    </div>
+    <div class="container">
+        <br>
+        <nav class="breadcrumb">
+          <a class="breadcrumb-item" href="/">Home</a>
+          <span class="breadcrumb-item active" aria-current="page">Inicio</span>
+        </nav>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Revoluciona Con Las Últimas Tablets</h3>
+                <p class="col-sm">Desata tu creatividad en movimiento con nuestras últimas tablets, con pantallas de alta resolución y soporte para stylus sensibles.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Eficaz Montaje de Oficina en Casa</h3>
+                <p class="col-sm">Eleva tu juego con nuestras computadoras de escritorio de alta especificación, con las últimas GPUs para gráficos de alta calidad y un juego fluido.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Movimiento con Notebooks de Alto Rendimiento</h3>
+                <p class="col-sm">Perfectas para estudiantes, nuestras notebooks versátiles y asequibles están diseñadas para apoyar todas tus necesidades educativas, desde la investigación hasta los proyectos multimedia.</p>
+            </div>
+        </div>
+        <br>
+        <video src="media/1.mp4" autoplay loop class="img-fluid"></video>
+        <br>
+        <div class="d-flex flex-wrap">
+          <div class="card-prod text-bg-dark card col-sm-4" style="width: 18rem;">
+            
+            <h5 class="card-header">Notebook</h5>
+            <h6 class="card-subtitle text-bg-secondary mb-2 text-body-secondary">Ideal programadores</h6>
+            <img src="media/3.jpg"class="card-img-top" alt="">
+            <div class="d-flex flex-column card-body justify-content-between">
+              
+              <p class="card-text">i5 32DDR5 512GB-SSD LED16''</p>
+              <div>
+                <button class="btn">Ver Más</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-prod text-bg-dark card col-sm-4" style="width: 18rem;">
+            
+            <h5 class="card-header">Tablet</h5>
+            <h6 class="card-subtitle text-bg-secondary mb-2 text-body-secondary">Ideal vendedores</h6>
+            <img src="media/2.jpg"class="card-img-top" alt="">
+            <div class="d-flex flex-column card-body justify-content-between">
+              
+              <p class="card-text">i3 8DDR5 128GB-SSD LED11''</p>
+              <div>
+                <button class="btn">Ver Más</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-prod text-bg-dark card col-sm-4" style="width: 18rem;">
+            <h5 class="card-header">Desktop</h5>
+            <h6 class="card-subtitle text-bg-secondary mb-2 text-body-secondary">Ideal gammers</h6>
+            <img src="media/5.jpg"class="card-img-top" alt="">
+            <div class="d-flex flex-column card-body justify-content-between">
+              
+              <p class="card-text">i7 16DDR5 1TBSSD Radeon-4GBDDR5 LED24''</p>
+              
+              <div>
+                <button class="btn">Ver Más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        <br>
+        <div>
+          <br>
+          <!-- Botón para abrir el modal -->
+          <button type="button" id="openModalBtn" class="btn btn-primary">Asociados</button>
+        </div>    
+        
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column align-items-start">
+                <a href="">Facebook</a>
+                <a href="">Instragram</a>
+                <a href="">Youtube</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <h3>Espacio Alquimia</h3>
+                    <p>Colon 66 - Zapala - NQN</p>
+                    <p><span class="oi oi-phone"></span>+5492942625906</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="">Home</a>
+                <a href="">elprofe</a>
+                <a href="">Productos</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ASOCIADOS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Próximamente se habilitará la sección para ASOCIADOS!!
+            Si se suscribio al newsletter, le avisaremos por mail! 
+            
+            Saludos
+          </div>
+          <div class="modal-footer">
+            <button id="closeModalBtn" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var openModalBtn = document.getElementById('openModalBtn');
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+
+        openModalBtn.addEventListener('click', function() {
+          console.log('El modal está comenzando a abrirse');
+          openModalBtn.disabled = true;
+          openModalBtn.classList.remove('btn-primary');
+          openModalBtn.classList.add('btn-warning');
+          myModal.show();
+        });
+
+        myModal._element.addEventListener('hidden.bs.modal', function() {
+          console.log('El modal se ha cerrado completamente');
+          openModalBtn.disabled = false;
+          openModalBtn.classList.remove('btn-warning');
+          openModalBtn.classList.add('btn-primary');
+        });
+      });
+    </script>
+  </body>
+</html>

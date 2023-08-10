@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>elprofedotti - BOOTSTRAP</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Tecnologia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">elprofedotti</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body navbar-dark bg-dark">
+              <ul class="navbar-nav  justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="precios.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                  </div>
+                </li> -->
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Busca tu producto" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Buscar por categorias, nombres o precios">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="jumbotron">
+        <h1 >PRECIOS</h1>
+    </div>
+    <div>
+      <img src="media/2_.jpg" class="img-fluid" alt=""  width="100%">
+    </div>
+    
+    <div class="container">
+      <br>
+      <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="/">Home</a>
+        <span class="breadcrumb-item active" aria-current="page">Inicio</span>
+      </nav>
+        <!--pestañas  -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="precios-tab" data-bs-toggle="tab" data-bs-target="#precios" type="button" role="tab" aria-controls="precios" aria-selected="true">Precios</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="suscripciones-tab" data-bs-toggle="tab" data-bs-target="#suscripciones" type="button" role="tab" aria-controls="suscripciones" aria-selected="false">Suscripciones</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="comentarios-tab" data-bs-toggle="tab" data-bs-target="#comentarios" type="button" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</button>
+        </li>
+        <li  class="nav-item" role="presentation">
+          
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Asociado</a>
+        </li>
+        
+      </ul>
+      
+      <!-- fin pestañas -->
+      <!-- tablas -->
+      <div class="tab-content" id="myTabContent">
+          
+        <!-- tabla comentarios -->
+        <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+          <div class="d-flex justify-content-center ">
+            <!-- comienza carrusel -->
+            <div id="carouselExampleCaptions" class="carousel slide w-75" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active data-bs-interval="2000"">
+                  <img src="media/3.jpg" class="d-block img-fluid" width="100%"  alt="...">
+                  <div class="carousel-caption  d-md-block" style="background-color: rgba(0, 0, 0, 0.650);">
+                    <h2>Juan Acosta</h2>
+                    <h6>Tremendos equipos!! soy VIP, asiq me lleve gran descuento!!</h6>
+                  </div>
+                </div>
+                <div class="carousel-item data-bs-interval="3000"">
+                  <img src="media/4.jpg" class="d-block img-fluid" width="100%" alt="...">
+                  <div class="carousel-caption  d-md-block" style="background-color: rgba(0, 0, 0, 0.650);">
+                    <h2>Natalia Afione</h2>
+                    <h6>Increible tablet, a todos lados conmigo!! encima pegue descuento por ser premium!!</h6>
+                  </div>
+                </div>
+                <div class="carousel-item data-bs-interval="4000"">
+                  <img src="media/5.jpg" class="d-block img-fluid" width="100%" alt="...">
+                  <div class="carousel-caption  d-md-block" style="background-color: rgba(0, 0, 0, 0.650);">
+                    <h2>Mauro Seoane</h2>
+                    <h6>Siendo usuario con suscripcion Free, me dieron descuento, unos genios, adquiri una potente computadora de escritorio, soy diseñador, VUELA!!!</h6>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- fin tabla comentarios -->
+        <!-- tabla suscripciones -->
+        <div class="tab-pane fade" id="suscripciones" role="tabpanel" aria-labelledby="suscripciones-tab">
+          <div class="d-flex justify-content-center">
+            <!-- acordeon -->
+            
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    VIP
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Obtienes 25% de descuento en tu primer compra! </strong> 
+                    <p>En las posteriores, siempre tendrás un 10% de descuento</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Premium
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Obtienes 10% de descuento en tu primer compra! </strong> 
+                    <p>En las posteriores, siempre tendrás un 5% de descuento</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Free
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Obtienes 5% de descuento en tu primer compra! </strong> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fin acordeon -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn-2 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Suscribirme
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Suscriptores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Enero 2024 se abren las suscripciones!</p>
+                    <p>Disculpe las molestias!!!</p>
+                    <form class="d-flex">
+                      <div>
+                        <input class="form-control me-2" type="email" placeholder="tu mejor email" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Te avisaremos cuando activemos las suscripciones!!!">
+                      </div>
+                      
+                    </form>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button class="btn btn-outline-success" type="submit" >Enviar, y avisarme</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="card" style="width: 18rem;">
+              <div class="card-body text-bg-dark">
+                <h5 class="card-title ">Suscripciones</h5>
+                <p class="card-text">Estos son los descuentos según tu suscripción</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">VIP - 20%</li>
+                <li class="list-group-item">Premium - 15%</li>
+                <li class="list-group-item">Free - 5%</li>
+              </ul>
+              <div class="card-body">
+                <p class="card-text">Cada suscripción otorga diferentes descuentos!!</p>
+              </div>
+            </div> -->
+          </div>
+        
+        </div>
+        <!-- fin tabla suscripciones -->
+        <!-- tabla precios -->
+        <div class="tab-pane fade show active" id="precios" role="tabpanel" aria-labelledby="precios-tab">
+          
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Descripcion</th>
+                  <th scope="col">
+                    <button class="btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3" title="Mostrar Calidad">Calidad</button>
+                  </th>
+                  <th scope="col">Precio $</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="">
+                  <td scope="row">Notebook</td>
+                  <td>i5 32DDR5 512SSD</td>
+                  <td>
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span></td>
+                    </div>
+                  <td>$ 899.000</td>
+                </tr>
+                <tr class="">
+                  <td scope="row">Tablet</td>
+                  <td>i5 8DDR5 128SSD</td>
+                  <td>
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span></td>
+                    </div>
+                  </td>
+                  <td>$ 599.000</td>
+                </tr>
+                <tr class="">
+                  <td scope="row">Desktop</td>
+                  <td>i7 16DDR5 512SSD Pantalla LED 24''</td>
+                  <td>
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span>
+                      <span class="oi oi-star"></span></td>
+                    </div>
+                  </td>
+                  <td>$ 699.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>    
+      </div>
+      <!-- FIN tabla precio -->
+      </div>
+      <!-- fin tablas -->
+      
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column align-items-start">
+                <a href="">Facebook</a>
+                <a href="">Instragram</a>
+                <a href="">Youtube</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <h3>Espacio Alquimia</h3>
+                    <p>Colon 66 - Zapala - NQN</p>
+                    <p><span class="oi oi-phone"></span>+5492942625906</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="">Home</a>
+                <a href="">elprofe</a>
+                <a href="">Productos</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+    
+    <script src="node_modules/popper.js/dist/popper.min.js" ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+  </body>
+</html>

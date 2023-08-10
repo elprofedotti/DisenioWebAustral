@@ -1,0 +1,25 @@
+#openModalBtn {
+  background-color: #007bff;
+  color: white; }
+  #openModalBtn:hover {
+    background-color: #0062cc; }
+  #openModalBtn.btn-warning {
+    background-color: #ffc107; }
+    #openModalBtn.btn-warning:hover {
+      background-color: #d39e00; }
+
+#closeModalBtn {
+  background-color: #6c757d;
+  color: white; }
+  #closeModalBtn:hover {
+    background-color: #545b62; }
+
+.modal-body {
+  background-color: grey;
+  color: black;
+  margin: 1rem;
+  padding: 1rem; }
+
+.modal-header {
+  background-color: #007bff;
+  color: white; }

@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>elprofedotti - BOOTSTRAP</title>
+    
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
@@ -127,7 +129,8 @@
         <br>
         <div>
           <br>
-          <button type="button" class="btn-lg" data-bs-toggle="popover" title="Proximamente!!!" data-bs-content="Estamos trabajando para salir adelante con la modalidad Asociados!!!">Asociados</button>
+          <!-- Botón para abrir el modal -->
+          <button type="button" id="openModalBtn" class="btn btn-primary">Asociados</button>
         </div>    
         
     </div>
@@ -153,13 +156,47 @@
         </div>
     </footer>
     
-    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
-    <script src="js/main.js" ></script>
-    <script src="node_modules/popper.js/dist/popper.min.js" ></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ASOCIADOS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Próximamente se habilitará la sección para ASOCIADOS!!
+            Si se suscribio al newsletter, le avisaremos por mail! 
+            
+            Saludos
+          </div>
+          <div class="modal-footer">
+            <button id="closeModalBtn" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
     <script>
-      $(function(){
-        $("[data-bs-toggle='popover']").popover();
+      document.addEventListener('DOMContentLoaded', function() {
+        var openModalBtn = document.getElementById('openModalBtn');
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+
+        openModalBtn.addEventListener('click', function() {
+          console.log('El modal está comenzando a abrirse');
+          openModalBtn.disabled = true;
+          openModalBtn.classList.remove('btn-primary');
+          openModalBtn.classList.add('btn-warning');
+          myModal.show();
+        });
+
+        myModal._element.addEventListener('hidden.bs.modal', function() {
+          console.log('El modal se ha cerrado completamente');
+          openModalBtn.disabled = false;
+          openModalBtn.classList.remove('btn-warning');
+          openModalBtn.classList.add('btn-primary');
+        });
       });
     </script>
   </body>
